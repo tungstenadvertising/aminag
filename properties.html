@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>AminAg</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" >
+
+
+<link href="https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css" rel="stylesheet" media="print" onload="this.media='all'" />
+<link href="css/map.css" rel="stylesheet" >
+<!-- <link href="css/map.min.css" rel="stylesheet" > -->
+
+<script defer src="https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js"></script>
+<script defer src="js/map.js"></script>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/style-overrides.css" rel="stylesheet">
+<style>
+  /* Header Overrides */
+  .logo { position: relative; z-index: 100; }
+  header { height: 80px; }
+  @media (min-width: 480px) { header { height: 90px; } }
+  @media (min-width: 768px) { header { height: 124px; } }
+  @media (min-width: 992px) { header { height: 129px; } }
+
+  /* filter */
+  .filter {
+    padding-inline: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .filter-item {
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+    background: #fff;
+    color:#404040;
+    text-decoration:none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border:1px solid #D6D6D6;
+    transition: .25s ease;
+  }
+  .filter-item:first-child {
+    margin-right: auto;
+  }
+  .filter-item:hover {
+    background-color: #666666;
+    color: #fff;
+    border-color: currentColor;
+  }
+  .filter-item.active {
+    background-color: var(--green);
+    color: #fff;
+    border-color: currentColor;
+  }
+  @media (max-width: 992px) {
+    .filter-item {
+      font-size: 16px;
+      line-height: 40px;
+      height: 40px;
+    }
+
+  }
+  @media (max-width: 768px) {
+    .filter-item {
+      text-transform: none;
+    }
+    .filter-item:first-child {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 580px) {
+    .filter {
+      padding:0 0 15px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content: center;
+      gap: 7px;
+      flex-wrap: wrap;
+    }
+    .filter-item {
+      padding: 0 7px;
+      width: auto;
+      height: 35px;
+      line-height: 35px;
+      grid-column: auto;
+    }
+    .filter-item[data-filter="all"] {
+      grid-column: span 3;
+    }
+
+  }
+</style>
+<!-- <script src="js/bootstrap.min.js"></script> -->
+
+<script defer src="js/jquery.min.js"></script>
+
+<script defer src="js/bootstrap.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138665628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-138665628-1');
+</script>
+
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo"><a href="index.html"><img src="images/logo.png" alt="Maha Investments" width="316" height="98"></a></div>
+    <div class="navigation">
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="investment-approach.html">INVESTMENT APPROACH</a></li>
+            <li class="active"><a href="properties.html">ORCHARDS</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+
+      </nav>
+    </div>
+  </div>
+</header>
+<section class="middle-sec about">
+  <div class="container" >
+    <nav class="filter">
+      <a href="#" class=" filter-item active" data-filter="all">All Orchards</a>
+      <a href="#" class="filter-item" data-filter="pistachios">Pistachios</a>
+      <a href="#" class="filter-item" data-filter="almonds">Almonds</a>
+      <a href="#" class="filter-item" data-filter="walnuts">Walnuts</a>
+    </nav>
+  </div>
+  <div class="map-wrp">
+
+    <div class="sidepanel">
+      <div class="sidebar pad2">
+        <div id="mobile-listing-toggle" class="map-control control-appear ">
+          <svg width="30" height="40" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17 20H1C0.734784 20 0.48043 19.8946 0.292893 19.7071C0.105357 19.5196 0 19.2652 0 19V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H17C17.2652 0 17.5196 0.105357 17.7071 0.292893C17.8946 0.48043 18 0.734784 18 1V19C18 19.2652 17.8946 19.5196 17.7071 19.7071C17.5196 19.8946 17.2652 20 17 20ZM5 5V7H13V5H5ZM5 9V11H13V9H5ZM5 13V15H10V13H5Z" fill="currentColor"/>
+            </svg>
+
+        </div>
+        <div id="farms-listing" class="farms-listing"></div>
+      </div>
+    </div>
+    <div id="map" class="map pad2"></div>
+    <a href="properties.html" id="reset_map" title="Map Reset" class="map-control control-appear ">
+      <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.62988 0.629883H11.7409V2.62988H2.62988V12.1113H0.629883V2.62988C0.629883 1.52531 1.52531 0.629883 2.62988 0.629883ZM0.629883 30.6298V40.1113C0.629883 41.2159 1.52531 42.1113 2.62988 42.1113H11.7409V40.1113H2.62988V30.6298H0.629883ZM40.1113 30.6298V40.1113H30.2595V42.1113H40.1113C41.2159 42.1113 42.1113 41.2159 42.1113 40.1113V30.6298H40.1113ZM42.1113 12.1113V2.62988C42.1113 1.52531 41.2159 0.629883 40.1113 0.629883H30.2595V2.62988H40.1113V12.1113H42.1113Z" fill="white"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.62988 0.629883H11.7409V2.62988H2.62988V12.1113H0.629883V2.62988C0.629883 1.52531 1.52531 0.629883 2.62988 0.629883ZM0.629883 30.6298V40.1113C0.629883 41.2159 1.52531 42.1113 2.62988 42.1113H11.7409V40.1113H2.62988V30.6298H0.629883ZM40.1113 30.6298V40.1113H30.2595V42.1113H40.1113C41.2159 42.1113 42.1113 41.2159 42.1113 40.1113V30.6298H40.1113ZM42.1113 12.1113V2.62988C42.1113 1.52531 41.2159 0.629883 40.1113 0.629883H30.2595V2.62988H40.1113V12.1113H42.1113Z" fill="currentColor"/>
+      </svg>
+    </a>
+  </div>
+
+</section>
+<footer>
+	<div class="container">
+		<div class="flex items-center">
+			<img loading="lazy" src="images/home-icon.svg" alt="" width="18" height="17">
+			<span style="margin-left: 10px; ">201 Mission Street, Suite 1350, San Francisco, CA 94105</span>
+		</div>
+
+		<div class="flex items-center">
+			<img loading="lazy" alt="" src="images/call-icon.svg" width="18" height="18" />
+			<a style="margin-left: 10px; " href="tel:(415)742-8929">(415) 742-8929</a>
+		</div>
+
+		<div>
+			Copyright © AminAg 2022.
+		</div>
+	</div>
+</footer>
+
+</body>
+</html>

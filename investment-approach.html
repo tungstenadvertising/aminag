@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>AminAg</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/style-overrides.css" rel="stylesheet">
+
+<style>
+  /* Header Overrides */
+  .logo { position: relative; z-index: 100; }
+  header { height: 80px; }
+  @media (min-width: 480px) { header { height: 90px; } }
+  @media (min-width: 768px) { header { height: 124px; } }
+  @media (min-width: 992px) { header { height: 129px; } }
+
+  /* Investment Approach Tabs Overrides */
+  .tab-container .nav-tabs li.active:after {
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #f6f6f6;
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    width: 20px;
+    margin: 0 auto;
+  }
+  @media (max-width: 992px){
+    .tab-container .nav-tabs li.active:after {
+        display: none;
+    }
+  }
+  .tab-container .nav-tabs > li.active a {
+    color: var(--green);
+  }
+  .tab-container .nav-tabs > li.active a img {
+    outline: 5px solid var(--green);
+    filter: saturate(1.3) brightness(1.2);
+  }
+  .tab-container .nav-tabs li a {
+    font-size: 18px;
+    color: #cccccc;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    background-color: transparent;
+    border-color:transparent;
+  }
+
+  .tab-container .nav-tabs li a img {
+    border-radius: 50%;
+    margin-top: 20px;
+    transition: .2s ease;
+  }
+  .tab-container .nav-tabs li a:hover {
+    color: var(--green);
+    }
+.tab-container .nav-tabs li:not(.active) a:hover img {
+    filter: saturate(1.2) brightness(1.1);
+    outline: 1px solid var(--green);
+  }
+  .tab-container .tab-pane {
+    background-color: #f6f6f6;
+    padding: 20px 30px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+  .tab-container .tab-pane span {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+  .tab-container .tab-pane ul {
+    padding-left: 15px;
+  }
+
+  @media (max-width: 991px) {
+    .tab-container .nav-tabs li a {
+      font-size: 15px;
+    }
+    .tab-container .nav-tabs li a img {
+      width: 150px;
+      height: auto;
+    }
+    .tab-container .tab-pane span {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+</style>
+<!-- <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=Y3hD4I1rjqkD33DD6jJLd8dxh2xHx_G6j_RkUyQgRI-nsKiIxNZFwlNj8ASw7Ol6knaKtKwzJWlp5sinxdtM-T8OUPQ37tUcHAseJC5ef9Xap_uGP0ajzphfPehP5XTviGcaKr2iv_dUXqvKo3qymRZ7hj0Nvl7Pp4v7RaXq23zKhVw3YsdD4_pDwSdR5N6o8H6CrbwT2KQwl16Pkv9UChGfqk-W-oBbZrWGsz8QsI0RzEk2LhBDMqllfEYUX7-B" charset="UTF-8"></script> -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138665628-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-138665628-1');
+</script>
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="logo"><a href="index.html"><img src="images/logo.webp" alt="Maha Investments" width="316" height="98"></a></div>
+    <div class="navigation">
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li  class="active"><a href="investment-approach.html">INVESTMENT APPROACH</a></li>
+            <li><a href="properties.html">ORCHARDS</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+
+      </nav>
+    </div>
+  </div>
+</header>
+<section class="middle-sec mt-35">
+  <div class="container">
+    <div class="top-sec">
+      <p>We develop and farm nut orchards, primarily in the central valley of California. The region supplies 99% of the pistachios grown in the US, and over 80% of the almonds grown worldwide.  The majority of our product is exported to meet consumer demand in world markets. We believe worldwide nut consumption will increase as middle class segments grow in emerging markets, and as consumers continue the trend towards healthy plant-based proteins.</p>
+      <p>We acquire open ground and transform the land into either pistachio, almond or walnut orchards, depending on the soil, water and geography of the land. In some cases, we purchase existing orchards. We manage the horticultural and financial operations of the orchards to provide a competitive return to our investors. We have been operating in California for over 20 years and our track record is made possible by our expertise in the following areas:  Development, Operations, and Enterprise Management.</p>
+    </div>
+    <div class="tab-container">
+      <ul class="nav nav-tabs responsive" id="myTab">
+        <li class="active"><a class="deco-none red-class" href="#resp-tab1">Development<br>
+          <img src="images/development.webp" alt="" width="249" height="249"></a></li>
+        <li><a href="#resp-tab2">Operations<br>
+          <img src="images/operation.webp" alt="" width="249" height="249"></a></li>
+        <li><a href="#resp-tab3">Enterprise Management<br>
+          <img src="images/management.webp" alt="" width="249" height="249"></a></li>
+      </ul>
+      <div class="tab-content responsive">
+        <div class="tab-pane active" id="resp-tab1"><span>Development</span>
+          <ul>
+            <li>It starts with good soil and good water and we scour the Central Valley and other growing regions to find land that is suitable for our long-term permanent crop investments.  We evaluate a variety of additional factors including climate, historical yields on existing crops, regulatory environment, and access to labor. </li>
+            <li>We invest heavily at the outset on land preparation and state of the art drip irrigation systems, in addition to securing healthy, vigorous trees and rootstocks from reputable nurseries.</li>
+            <li>We employ technology, including sensor devices and monitoring systems, to supplement the decision making of our experienced farm managers.</li>
+          </ul>
+          <p>To date we have developed and operate 18 different properties and have amassed considerable experience and expertise to ensure that we can deploy capital and marshal resources to build sustainable farms that provide long term economic benefits to our investors.
+          </p>
+        </div>
+        <div class="tab-pane" id="resp-tab2"><span>Operations</span>
+          <ul>
+            <li>We contract with premier farm management companies to oversee ongoing operations.</li>
+            <li>We communicate with farm managers on a daily basis and ensure they have the capital and support to make timely decisions that positively affect annual yields.</li>
+            <li>We are a high end operator and all of our farms show our tremendous pride of ownership.</li>
+            <li>We cultivate long term relationships with various suppliers and providers in the nut market value chain.  We work with over a dozen processors and marketing companies, large regional lenders, six farm management companies, and countless suppliers in the industry.  Our reputation in the industry is impeccable.</li>
+          </ul>
+        </div>
+        <div class="tab-pane" id="resp-tab3"><span>Enterprise Management</span>
+          <p>The business of farming is complex.  We grow food for a global market and approximately 70% of the product is exported for consumption to distant markets.</p>
+          <ul>
+            <li>Our home office professionals bring a wealth of practical business experience.  We come from publicly traded and large private companies, with executive, finance, accounting and consulting backgrounds.  Most importantly, our executive team is comprised of 4th generation farmers!</li>
+            <li>Our home office professionals manage all of the tax, accounting, financial reporting and transactional processing, thereby freeing up the farm managers to focus on the important horticultural operations. </li>
+            <li>Our management team is acutely aware of global economic factors that affect exchange rates, interest rates and other supply and demand factors in our selected nut markets.  We consult with processors, marketers, brokers, bankers and a host of professionals in the value chain to ensure we are maximizing potential returns to our investors.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+	<div class="container">
+		<div class="flex items-center">
+			<img loading="lazy" src="images/home-icon.svg" alt="" width="18" height="17">
+			<span style="margin-left: 10px; ">201 Mission Street, Suite 1350, San Francisco, CA 94105</span>
+		</div>
+
+		<div class="flex items-center">
+			<img loading="lazy" alt="" src="images/call-icon.svg" width="18" height="18" />
+			<a style="margin-left: 10px; " href="tel:(415)742-8929">(415) 742-8929</a>
+		</div>
+
+		<div>
+			Copyright © AminAg 2022.
+		</div>
+	</div>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/responsive-tabs.js"></script>
+<script>
+    let target = document.querySelector('.tab-content');
+
+    $( 'ul.nav.nav-tabs  a' ).click( function ( e ) {
+        e.preventDefault();
+        $( this ).tab( 'show' );
+
+        target.scrollIntoView({
+            block: "start",
+            inline: "nearest",
+            behavior: 'smooth'
+          })
+
+    } );
+
+
+</script>
+</body>
+</html>

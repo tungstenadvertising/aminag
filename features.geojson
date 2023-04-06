@@ -1,0 +1,385 @@
+{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "",
+        "Title": "Paariz Farms",
+        "description": "Gross Acres - 961<br>Location/County - Kern<br>Crop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.262736,
+          35.35429
+        ],
+        "type": "Point"
+      },
+      "id": "0cb4e21a6719a1d4b5eba18f40b349f3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmq12ly2",
+        "title": "Paariz Farm",
+        "description": "Gross Acres - 961<br>\nLocation /County - Kern<br>\nCrop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.446075,
+          35.712147
+        ],
+        "type": "Point"
+      },
+      "id": "10974373432ee06b2ab92d8e29997ea6"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqgg538",
+        "title": "Vista Orchards North",
+        "description": "Gross Acres - 499 <br>Location/County -Colusa/Glenn<br>Crop - Walnuts",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -121.988997,
+          39.446133
+        ],
+        "type": "Point"
+      },
+      "id": "1271d828a85898c8de9494b52cb8a202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqn2v4b",
+        "title": "Mersal Farm",
+        "description": "Gross Acres - 1220<br>Location/County - Marced<br>Crop - Almonds",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -120.506619,
+          37.251277
+        ],
+        "type": "Point"
+      },
+      "id": "22542e294f7bb7fce564325314c9fe44"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqx4i5g",
+        "title": "Seanaria Farms",
+        "description": "Gross Acres - 743<br>Location/County - Madera<br>Crop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -120.249455,
+          36.800077
+        ],
+        "type": "Point"
+      },
+      "id": "408bac681d12e8661a8caae888afa8ea"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqrew2d",
+        "title": "Karun Farm",
+        "description": "Gross Acres - 800<br>Location/County - Fresno<br>Crop - Pistachio/Almonds",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -120.022675,
+          36.16003
+        ],
+        "type": "Point"
+      },
+      "id": "47ccdb7affdb7208d6a9f16546dcee2a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqtg9ae",
+        "title": "Meymand Farm",
+        "description": "Gross Acres - 321<br>Location/County - Fresno/Kings<br>Crop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -120.026694,
+          36.130877
+        ],
+        "type": "Point"
+      },
+      "id": "4cd33276e294a7c989c1d2060185fe83"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmq66xg4",
+        "title": "Saty Farm",
+        "description": "Gross Acres - 235<br>Location/County - Kern<br>Crop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.430677,
+          35.692361
+        ],
+        "type": "Point"
+      },
+      "id": "51425d86f9ffccf0d5af46ded5021e84"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmq4e1t3",
+        "title": "Payvand Farms",
+        "description": "Gross Acres - 640<br>Location/County - Kern<br>Crop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.446075,
+          35.712147
+        ],
+        "type": "Point"
+      },
+      "id": "53b21d98b908fbda2c70ed991516708d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmq7elp5",
+        "title": "Lone Palm Farm",
+        "description": "Gross Acres - 643<br>Location/County - Kern<br>Crop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.491536,
+          36.029105
+        ],
+        "type": "Point"
+      },
+      "id": "59f0a934c3a7cfdab7cf2cdfc8ea82ae"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqv05zf",
+        "title": "Seanaria Farms",
+        "description": "Gross Acres - 1,815<br>Location/County - Marced<br>Crop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -120.291225,
+          36.858372
+        ],
+        "type": "Point"
+      },
+      "id": "7c18dd8cea84297aa51cce458d13bb95"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "",
+        "title": "Kingman Ranch",
+        "description": "Gross Acres - 2198<br>Location/County - Kern<br>Crop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -114.035033,
+          35.3005
+        ],
+        "type": "Point"
+      },
+      "id": "a07d22ae643c33c255ad15db0ef8c703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmql5s8a",
+        "title": "Vista Orchards North",
+        "description": "Gross Acres - 606<br>Location/County - Solano<br>Crop - Almonds/Walnuts",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -121.866016,
+          38.426855
+        ],
+        "type": "Point"
+      },
+      "id": "a51b0247ee2e18312cc33cbc9bca9735"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "yucca-marker",
+        "title": "Yucca",
+        "description": "Gross Acres - 1905 <br>Location/County - <br>Crop - Pistachios",
+        "marker-color": "#1087bf",
+        "marker-size": "large",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -113.915557,
+          35.33682
+        ],
+        "type": "Point"
+      },
+      "id": "a5a8079c8a6ec0911b4c080355aea827"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqe9ej7",
+        "title": "Vista Orchards South",
+        "description": "Gross Acres - 396<br>Location/County - Kern<br>Crop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -118.806777,
+          35.039244
+        ],
+        "type": "Point"
+      },
+      "id": "b14e22de3401ca47dff6569bc711b4ce"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqpjl2c",
+        "title": "Vista Orchards North",
+        "description": "Gross Acres - 1,815<br>Location/County - Marced<br>Crop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -120.564433,
+          37.156605
+        ],
+        "type": "Point"
+      },
+      "id": "bf13218b7b39af7db00f53dec71ee5c3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmpyg871",
+        "title": "Shasti Farms",
+        "description": "Gross Acres - 940<br>Location/County - Kern<br>Crop - Pistachios",
+        "color": "large",
+        "marker-color": "",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.591388,
+          35.628891
+        ],
+        "type": "Point"
+      },
+      "id": "c5794d9c808d31221763f15b03300854"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmq8o636",
+        "title": "Raaviz Farms",
+        "description": "Gross Acres - 432<br>Location/County - Kern<br>Crop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.392525,
+          35.370152
+        ],
+        "type": "Point"
+      },
+      "id": "ca381e678b3abb5cd2888aec64eee037"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmpomy50",
+        "title": "Alborz Farms",
+        "description": "Gross Acres - 320<br>Location/County - Kern<br>Crop - Pistachios",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -119.366455,
+          35.365535
+        ],
+        "type": "Point"
+      },
+      "id": "cd9f7ee6124d1bd4f565873d1422a60c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "marker-ipmqi6op9",
+        "title": "Dixieland Farms",
+        "description": "Gross Acres - 1,067<br>Location/County -Solano  <br>Crop - Almonds/Walnuts",
+        "marker-size": "large",
+        "marker-color": "#1087bf",
+        "marker-symbol": ""
+      },
+      "geometry": {
+        "coordinates": [
+          -121.873769,
+          38.457311
+        ],
+        "type": "Point"
+      },
+      "id": "d48d9137a2fe483f9bd5facd75fc7942"
+    }
+  ],
+  "type": "FeatureCollection"
+}
