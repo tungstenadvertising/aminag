@@ -384,6 +384,26 @@ var farms = {
       "coordinates": [ -113.915557, 35.33682 ],
       "type": "Point"
     }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "id": "marker-ipmqmettler1", // unique id
+      "title": "Mettler Farm",
+      "grossacres": "421",
+      "location": "Kern County",
+      "crop": "Almonds",
+      "pistachios": false,
+      "almonds": true,
+      "walnuts": false,
+      "image": "images/yucca2.jpg",
+      "marker-color": "#1087bf",
+      "marker-symbol": ""
+    },
+    "geometry": {
+      "coordinates": [-118.959660, 35.045000], // placeholder coordinates, update if needed
+      "type": "Point"
+    }
   }
 ]
 };
