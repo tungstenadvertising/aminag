@@ -407,7 +407,8 @@ var farms = {
   }
 ]
 };
-farms.features.forEach((farm, index) => farm.properties.index = index)
+farms.features.forEach((farm, index) => farm.properties.index = index);
+farms.features.sort((a, b) => a.properties.title.localeCompare(b.properties.title));
 
 const farmListingContainer = document.querySelector('.farms-listing');
 const sidePanel = document.querySelector('.sidepanel');
