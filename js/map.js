@@ -407,8 +407,8 @@ var farms = {
   }
 ]
 };
-farms.features.forEach((farm, index) => farm.properties.index = index);
 farms.features.sort((a, b) => a.properties.title.localeCompare(b.properties.title));
+farms.features.forEach((farm, index) => farm.properties.index = index);
 
 const farmListingContainer = document.querySelector('.farms-listing');
 const sidePanel = document.querySelector('.sidepanel');
@@ -473,6 +473,7 @@ function buildLocationList(locations, initial) {
       // })
 
     // create Sidebar Listing for All Farms
+
     let farmListingItem = document.createElement('a');
     farmListingItem.className = `farms-listing-item ${initialBuild == true ? 'animate-listing-item' : '' }`;
     farmListingItem.style.setProperty('--animate-delay', `${feature.properties.index * 100}ms`);
@@ -632,31 +633,48 @@ filterItems.forEach((filter)=>{
 
       if(desktop) {
         padding = 300;
-      } else {
-        padding = 30;
+      } else if (mobile) {
+        padding = 70;
+      } else if (tablet) {
+        padding = 50;
+      } else if (xsMobile) {
+        padding = 40;
       }
+
       mapFitBounds(farms.features, padding);
       return;
     }
     if(filterExpr == 'pistachios') {
       if(desktop) {
-        padding = 300;
-      } else {
+        padding = 200;
+      } else if (mobile) {
+        padding = 70;
+      } else if (tablet) {
         padding = 50;
+      } else if (xsMobile) {
+        padding = 40;
       }
     }
     if(filterExpr == 'walnuts') {
       if(desktop) {
         padding = 200;
-      } else {
-        padding = 100;
+      } else if (mobile) {
+        padding = 220;
+      } else if (tablet) {
+        padding = 50;
+      } else if (xsMobile) {
+        padding = 150;
       }
     }
     if(filterExpr == 'almonds') {
       if(desktop) {
         padding = 200;
-      } else {
-        padding = 100;
+      } else if (mobile) {
+        padding = 70;
+      } else if (tablet) {
+        padding = 50;
+      } else if (xsMobile) {
+        padding = 40;
       }
     }
 
@@ -664,7 +682,6 @@ filterItems.forEach((filter)=>{
       "type":"FeatureCollection",
       "features": farms.features.filter(farm=>farm.properties[filterExpr])
     }
-    // map.setFilter('farm-markers', ['>=', `${filterExpr}`, true])
     buildLocationList(filteredFarms.features, false)
     mapFitBounds(filteredFarms.features, padding);
   })
