@@ -195,6 +195,8 @@
 <script>
   const swiper = new Swiper('.swiper', {
 	loop: true,
+	speed: 1200, // slow down transition (ms)
+	effect: 'slide',
 	pagination: {
 	  el: '.swiper-pagination',
 	  clickable: true,
@@ -207,6 +209,11 @@
 	  delay: 3500,
 	  disableOnInteraction: false,
 	},
+	on: {
+	  slideChangeTransitionStart: function() {
+		this.wrapperEl.style.transitionTimingFunction = 'cubic-bezier(0.77,0,0.175,1)';
+	  }
+	}
   });
 </script>
 
