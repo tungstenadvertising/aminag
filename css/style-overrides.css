@@ -45,8 +45,3 @@ footer .container {
 
 
 
-
-.owl-carousel .owl-item img {
-    min-height: 300px;
-    object-fit: cover;
-}
