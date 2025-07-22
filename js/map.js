@@ -331,7 +331,7 @@ var farms = {
       "id": "marker-ipmqgg538",
       "title": "Vista Orchards North",
       "grossacres": "485",
-      "location": "Colusa County",
+      "location": "Glenn/Colusa Counties",
       "crop": "Walnuts",
       "pistachios": false,
       "almonds": false,
